@@ -626,12 +626,15 @@
 
     .team .member .pic {
       overflow: hidden;
-      height: 280px;
+      height: 200px;
+      width: 200px;
+      margin: 0 auto;
       background: linear-gradient(135deg, var(--bg-light) 0%, rgba(0, 212, 255, 0.1) 100%);
       display: flex;
       align-items: center;
       justify-content: center;
       position: relative;
+      border-radius: 50%;
     }
 
     .team .member .pic::before {
@@ -644,6 +647,7 @@
       background: var(--gradient-accent);
       opacity: 0;
       transition: opacity 0.3s ease;
+      border-radius: 50%;
     }
 
     .team .member:hover .pic::before {
@@ -651,9 +655,16 @@
     }
 
     .team .member .pic i {
-      font-size: 4rem;
+      font-size: 3rem;
       color: var(--accent-color);
       opacity: 0.7;
+    }
+
+    .team .member .pic img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ensures the image fills the circular frame without distortion */
+      border-radius: 50%; /* Matches the circular shape of the container */
     }
 
     .team .member-info {
@@ -1270,9 +1281,9 @@
             <h2 class="font-space">Literature Review & Foundation</h2>
             <div class="code-snippet">
               ML_Security_Framework {<br>
-              &nbsp;&nbsp;algorithms: [SVM, Decision_Trees, Deep_Learning]<br>
-              &nbsp;&nbsp;detection: behavioral_anomaly_analysis<br>
-              &nbsp;&nbsp;prediction: vulnerability_identification<br>
+                algorithms: [SVM, Decision_Trees, Deep_Learning]<br>
+                detection: behavioral_anomaly_analysis<br>
+                prediction: vulnerability_identification<br>
               }
             </div>
           </div>
@@ -1311,7 +1322,7 @@
           <div class="col-lg-6 animate-card">
             <div class="member">
               <div class="pic">
-                <i class="bx bx-user-check"></i>
+                <img src="images/Dinithithi.jpeg" >
               </div>
               <div class="member-info">
                 <h4>Dinithi Pandithage</h4>
@@ -1330,7 +1341,7 @@
           <div class="col-lg-6 animate-card">
             <div class="member">
               <div class="pic">
-                <i class="bx bx-user-check"></i>
+                <img src="images/Tharaniyawarma.png" >
               </div>
               <div class="member-info">
                 <h4>Tharaniyawarma K.</h4>
@@ -1350,7 +1361,7 @@
           <div class="col-lg-6 animate-card">
             <div class="member">
               <div class="pic">
-                <i class="bx bx-user"></i>
+                <img src="images/Sulaxshayan.png" >
               </div>
               <div class="member-info">
                 <h4>N. Sulaxshayan</h4>
@@ -1366,11 +1377,10 @@
             </div>
           </div>
 
-
           <div class="col-lg-6 animate-card">
             <div class="member">
               <div class="pic">
-                <i class="bx bx-user"></i>
+                <img src="images/Munasingha.png" >
               </div>
               <div class="member-info">
                 <h4>Munasingha R.S.I.</h4>
@@ -1389,7 +1399,7 @@
           <div class="col-lg-6 animate-card">
             <div class="member">
               <div class="pic">
-                <i class="bx bx-user"></i>
+                <img src="images/Yeshani.jpeg" >
               </div>
               <div class="member-info">
                 <h4>Yeshani A.V.S.H.</h4>
@@ -1408,7 +1418,7 @@
           <div class="col-lg-6 animate-card">
             <div class="member">
               <div class="pic">
-                <i class="bx bx-user"></i>
+                <img src="images/Uthpali.jpeg" >
               </div>
               <div class="member-info">
                 <h4>Uthpali H.K.I.</h4>
@@ -1503,7 +1513,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-3 col-md-6 footer-contact">
-            <h3 class="font-space">ThreatGuard Pro</h3>
+
             <p>
               Advanced Machine Learning Research<br>
               SLIIT Malabe Campus<br>
@@ -1557,7 +1567,7 @@
     <div class="container d-md-flex py-4">
       <div class="me-md-auto text-center text-md-start">
         <div class="copyright">
-          &copy; Copyright <strong><span>ThreatGuard Pro</span></strong>. All Rights Reserved
+          © Copyright <strong><span>ThreatGuard Pro</span></strong>. All Rights Reserved
         </div>
         <div class="credits">
           Research Project by SLIIT Computer Systems Engineering Department
